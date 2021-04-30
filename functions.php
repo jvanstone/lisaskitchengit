@@ -278,7 +278,7 @@ function lisaskitchen_add_header(){
 
     ?>
     <div id="announcement_block">
-        <p>Did you know our food is safley delivered to your door!</p>
+        <p>Did you know our food is safely delivered to your door!</p>
     </div>
     <?php
 }
