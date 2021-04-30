@@ -28,4 +28,4 @@ ul.child_page_list{margin-bottom:40px}
 .child_pages_list>li>a:hover{color:#ba7abb}
 ul.sub-menu>li:first-of-type{border-top:2px solid #f29ef5}
 ul.sub-menu>li:last-of-type{border-bottom:2px solid #ba7abb}
-#announcement_block{margin-top:3.5rem;padding:1 rem;background-color:#fcd600;height:3.5rem;text-align:center}
+#announcement_block{margin-top:3.5rem;padding:1rem;background-color:#fcd600 !important;height:3.5rem;text-align:center !important}
