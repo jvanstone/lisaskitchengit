@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Lisa's Kitchen
+Theme URI: https://vanstoneonline.com
+Author: Jason Vanstone | Vanstone Online
+Author URI: https://vanstoneonline.com
+Description: This is a customization of Story
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+Template: story
+Tags: 
+
+
+*/
+
+
+//Create VAR's for stylesheet
+
+$lisaspink : #ba7abb;
+
+
+body { color: #2a2a2a; }
+
+/* Breadcrumb Styling */
+.breadcrumbs{
+    margin: 0 auto;
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+    border-top: solid 1px rgb(110, 110, 110);
+    border-bottom: solid 1px rgb(110, 110, 110);
+}
+  
+.breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+  
+.breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
+}
+
+article h3 { 
+    color: $lisaspink;
+    font-weight: bold;
+}
+
+h2 > a:hover {
+    color: $lisaspink;
+}
+
+/** Menu Tweaks **/
+
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+    padding-left: 0;
+    li {
+        float: left;
+        position: relative;
+        border: solid 0px #fff;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    ul ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        display: none;
+        float: left;
+        left: 0;
+        position: absolute;
+        top: 69px;
+        z-index: 99999;
+    }
+
+    ul ul ul {
+        left: 100%;
+        top: -2px;
+    }
+    ul ul a {
+        width: 175px;   
+    }
+
+    ul li:hover > ul {
+        display: block;
+    }
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+ color: $lisaspink;
+}
+/* Add arrows to items with sub menu */
+.menu li > a:after {
+    content: ' \25BE';
+}
+.menu li > a:only-child:after {
+    content: '';
+}
+.menu ul ul li > a:after {
+    content: ' \25B8';
+}
+.menu ul ul li > a:only-child:after {
+    content: '';
+}
+
+.menu ul > li > a {
+    color: #FFFFFF;
+    display: block;
+
+    padding: 26px 10px 23px;
+    text-align: center;
+    text-decoration: none;
+		font-size: 1.1em;
+}
+.menu ul ul > li > a {
+    color: whitesmoke;
+    text-align: left;
+    padding: 12px 10px;
+    font-size: 92.5%;
+	background-color: #697a85c2;
+}
+.menu ul ul > li > a:hover {
+    color: #FFFFFF;
+    background-color: #697a85c2;
+}
+.menu ul ul > li, .widget .children > li, .widget .sub-menu > li {
+    border-bottom: 1px solid #37414e;
+}
+
+.main-navigation ul ul > li:last-child {
+    border-bottom: none;
+}
+.main-navigation ul ul {
+    background: none repeat scroll 0 0 #697a85c2;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul ul ul > li > a {
+    color: #FFFFFF;
+    background-color: #697a85c2;
+}
+
+
+/* Style Child pages */
+
+ul.child_page_list {
+    margin-bottom: 40px;
+  
+    //border: 1px solid #CCC;
+    //background-color: #ccc;
+  }
+
+.child_page_list > li {
+ line-height: 2;
+ font-size: 22px;
+ font-weight: bold;
+
+}
+
+.child_pages_list > li > a:hover { 
+    color: $lisaspink;
+}
+
+ul.sub-menu > li:first-of-type {
+    border-top: 2px solid #f29ef5;
+}
+ul.sub-menu > li:last-of-type {
+    
+    border-bottom: 2px solid $lisaspink; 
+}
+
+
+#announcement_block {
+    margin-top: 3.5rem;
+    padding: 1  rem;
+    background-color: rgb(252, 214, 0); 
+    height: 3.5rem;
+    text-align: center;
+}
