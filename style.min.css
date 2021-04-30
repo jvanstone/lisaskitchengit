@@ -5,12 +5,12 @@ body{color:#2a2a2a}
 article h3{color:#ba7abb;font-weight:bold}
 h2>a:hover{color:#ba7abb}
 .main-navigation ul{list-style:none;margin:0;padding-left:0}
-.main-navigation li{float:left;position:relative;border:solid 0 #fff}
-.main-navigation a{display:block;text-decoration:none}
-.main-navigation ul ul{-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);display:none;float:left;left:0;position:absolute;top:69px;z-index:99999}
-.main-navigation ul ul ul{left:100%;top:-2px}
-.main-navigation ul ul a{width:175px}
-.main-navigation ul li:hover>ul{display:block}
+.main-navigation ul li{float:left;position:relative;border:solid 0 #fff}
+.main-navigation ul a{display:block;text-decoration:none}
+.main-navigation ul ul ul{-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);display:none;float:left;left:0;position:absolute;top:69px;z-index:99999}
+.main-navigation ul ul ul ul{left:100%;top:-2px}
+.main-navigation ul ul ul a{width:175px}
+.main-navigation ul ul li:hover>ul{display:block}
 .main-navigation .current_page_item a,.main-navigation .current-menu-item a{color:#ba7abb}
 .menu li>a:after{content:' \25BE'}
 .menu li>a:only-child:after{content:''}
@@ -28,4 +28,4 @@ ul.child_page_list{margin-bottom:40px}
 .child_pages_list>li>a:hover{color:#ba7abb}
 ul.sub-menu>li:first-of-type{border-top:2px solid #f29ef5}
 ul.sub-menu>li:last-of-type{border-bottom:2px solid #ba7abb}
-#announcement_block{margin-top:5rem;padding:1rem;background-color:#fcd600;height:5rem}
+#announcement_block{margin-top:3.5rem;padding:1 rem;background-color:#fcd600;height:3.5rem;text-align:center}

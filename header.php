@@ -49,7 +49,7 @@
 		
 			<div id="mobile-menu"></div>
 		</div><!-- #header-inner -->
-		<?php do_action( 'announcement-block'); ?>
-	</header><!-- #masthead -->
 	
+	</header><!-- #masthead -->
+	<?php do_action( 'announcement-block'); ?>
 	<div id="content" class="site-content">

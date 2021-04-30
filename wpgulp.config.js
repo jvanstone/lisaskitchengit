@@ -21,7 +21,7 @@ const injectChanges = true;
 
 // >>>>> Style options.
 // Path to main .scss file.
-const styleSRC = 'style.scss';
+const styleSRC = './assets/css/style.scss';
 
 // Path to place the compiled CSS file. Default set to root folder.
 const styleDestination = './';
