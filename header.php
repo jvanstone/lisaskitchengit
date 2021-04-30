@@ -51,5 +51,6 @@
 		</div><!-- #header-inner -->
 	
 	</header><!-- #masthead -->
-	<?php do_action( 'announcement-block'); ?>
+
 	<div id="content" class="site-content">
+	<?php do_action( 'announcement-block'); ?>
