@@ -1,6 +1,7 @@
 body{color:#2a2a2a}
 .breadcrumbs{margin:0 auto;list-style:none;margin:10px 0;overflow:hidden;border-top:solid 1px #6e6e6e;border-bottom:solid 1px #6e6e6e}
-.breadcrumbs li{display:inline-block;vertical-align:middle;margin-right:15px}
+.breadcrumbs li{border:0;display:inline-block;vertical-align:middle;margin-right:15px}
+.breadcrumbs li .bread-current{text-decoration:underline !important}
 .breadcrumbs .separator{font-size:18px;font-weight:100;color:#ccc}
 article h3{color:#ba7abb;font-weight:bold}
 h2>a:hover{color:#ba7abb}
