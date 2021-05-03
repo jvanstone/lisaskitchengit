@@ -266,6 +266,8 @@ function lisaskitchen_list_child_pages() {
     if ( $childpages ) {
      
         $string = '<ul class="child_page_list">' . $childpages . '</ul>';
+    } else { 
+        $string = '<h3>There are no children pages to view</h3>';
     }
      
     return $string;
