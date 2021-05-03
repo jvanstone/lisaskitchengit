@@ -28,3 +28,5 @@ ul.child_page_list{margin-bottom:40px;list-style-type:none;border:1px solid #813
 ul.child_page_list li{margin-top:2rem;margin-bottom:2rem;line-height:2;font-size:22px;font-weight:bold}
 ul.child_page_list li a:hover{color:#ba7abb;text-decoration:underline}
 #announcement_block{padding:1rem;background-color:#fcd600 !important;height:3.5rem;text-align:center !important}
+@media screen and (max-width:400px){#announcement_block{font-size:10px}
+}

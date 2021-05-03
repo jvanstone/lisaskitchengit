@@ -201,3 +201,9 @@ ul.child_page_list {
     height: 3.5rem;
     text-align: center !important;
 }
+
+@media screen and (max-width: 400px){
+    #announcement_block {
+    font-size: 10px;
+    }
+}
