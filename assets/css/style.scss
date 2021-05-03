@@ -53,103 +53,118 @@ h2 > a:hover {
     color: $lisaspink;
 }
 
-/** Menu Tweaks **/
+/*-------
 
+Main Nav Stylings
 
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-    padding-left: 0;
-    li {
-        float: left;
-        position: relative;
-        border: solid 0px #fff;
-    }
-    a {
-        display: block;
-        text-decoration: none;
-    }
-    ul ul {
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-        display: none;
-        float: left;
-        left: 0;
-        position: absolute;
-        top: 69px;
-        z-index: 99999;
-    }
+-----------*/
 
-    ul ul ul {
-        left: 100%;
-        top: -2px;
-    }
-    ul ul a {
-        width: 175px;   
-    }
+.menu { 
+    /* First Tier */
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+ 
+        li {
+            float: left;
+            position: relative;
+            border: solid 0px #fff;
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+        }
 
-    ul li:hover > ul {
-        display: block;
-    }
-}
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
- color: $lisaspink;
-}
-/* Add arrows to items with sub menu */
-.menu li > a:after {
-    content: ' \25BE';
-}
-.menu li > a:only-child:after {
-    content: '';
-}
-.menu ul ul li > a:after {
-    content: ' \25B8';
-}
-.menu ul ul li > a:only-child:after {
-    content: '';
-}
+        li > a {
+            color: #FFFFFF;
+            display: block;
+        
+            padding: 26px 10px 23px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
 
-.menu ul > li > a {
-    color: #FFFFFF;
-    display: block;
+        li > a:after {
+            content: ' \25BE';
+        }
+        
+        li > a:only-child:after {
+            content: '';
+        }
+        li:hover > ul {
+            display: block;
+        }
 
-    padding: 26px 10px 23px;
-    text-align: center;
-    text-decoration: none;
-		font-size: 1.1em;
-}
-.menu ul ul > li > a {
-    color: whitesmoke;
-    text-align: left;
-    padding: 12px 10px;
-    font-size: 92.5%;
-	background-color: #697a85c2;
-}
-.menu ul ul > li > a:hover {
-    color: #FFFFFF;
-    background-color: #697a85c2;
-}
-.menu ul ul > li, .widget .children > li, .widget .sub-menu > li {
-    border-bottom: 1px solid #37414e;
-}
+        /* Second Tier */
+        ul {
+            background: none repeat scroll 0 0 #697a85c2;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            display: none;
+            float: left;
+            left: 0;
+            position: absolute;
+            top: 69px;
+            z-index: 99999;
+        
+            li > a {
+                color: whitesmoke;
+                text-align: left;
+                padding: 12px 10px;
+                font-size: 92.5%;
+                background-color: #697a85c2;
+            }
+            li > a:hover {
+                color: $lisaspink;
+                background-color: #697a85c2;
+            }
 
-.main-navigation ul ul > li:last-child {
-    border-bottom: none;
-}
-.main-navigation ul ul {
-    background: none repeat scroll 0 0 #697a85c2;
-    margin: 0;
-    padding: 0;
-}
+            li > a:after {
+                content: ' \25B8';
+            }
 
-.menu ul ul ul > li > a {
-    color: #FFFFFF;
-    background-color: #697a85c2;
+            li > a:only-child:after {
+                content: '';
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+
+            /* Third Tier */
+            ul {
+                left: 100%;
+
+                li > a {
+                    color: #FFFFFF;
+                    background-color: #697a85c2;
+                }
+
+                li > a:hover {
+                    color: $lisaspink;
+                    background-color: #697a85c2;
+                }
+            } /* End Third Tier */   
+        } /* End Second Tier */
+
+        ul.sub-menu > li:first-of-type {
+            border-top: 2px solid #f29ef5;
+        }
+        ul.sub-menu > li:last-of-type {
+            border-bottom: 2px solid $lisaspink; 
+        }
+
+        ul > li, .widget .children > li, .widget .sub-menu > li {
+            border-bottom: 1px solid #37414e;
+        }
+    } /* End First Tier */
 }
 
 
 /* Style Child pages */
-
 ul.child_page_list {
     margin-bottom: 40px;
   
@@ -167,14 +182,6 @@ ul.child_page_list {
 .child_pages_list > li > a:hover { 
     color: $lisaspink;
 }
-
-ul.sub-menu > li:first-of-type {
-    border-top: 2px solid #f29ef5;
-}
-ul.sub-menu > li:last-of-type {
-    border-bottom: 2px solid $lisaspink; 
-}
-
 
 #announcement_block {
     padding: 1rem;
