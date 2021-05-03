@@ -150,38 +150,50 @@ Main Nav Stylings
             } /* End Third Tier */   
         } /* End Second Tier */
 
-        ul.sub-menu > li:first-of-type {
-            border-top: 2px solid #f29ef5;
-        }
         ul.sub-menu > li:last-of-type {
             border-bottom: 2px solid $lisaspink; 
-        }
-
-        ul > li, .widget .children > li, .widget .sub-menu > li {
-            border-bottom: 1px solid #37414e;
         }
     } /* End First Tier */
 }
 
 
-/* Style Child pages */
+ul.sub-menu > li:first-of-type {
+    border-top: 2px solid $lisaspink;
+}
+
+ul.sub-menu > li:last-of-type {
+    border-bottom: 2px solid $lisaspink; 
+}
+ul > li, .widget .children > li, .widget .sub-menu > li {
+    border-bottom: 1px solid #37414e;
+}
+/*****
+
+Style Child pages 
+
+
+******/ 
 ul.child_page_list {
     margin-bottom: 40px;
-  
-    //border: 1px solid #CCC;
+    list-style-type: none;
+    border: 1px solid rgb(129, 56, 56);
     //background-color: #ccc;
-  }
+  
+    li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 2;
+        font-size: 22px;
+        font-weight: bold;
+        //border: 1px solid red;
 
-.child_page_list > li {
- line-height: 2;
- font-size: 22px;
- font-weight: bold;
+        a:hover { 
+            color: $lisaspink;
+            text-decoration: underline;
+        }
+    }
+} 
 
-}
-
-.child_pages_list > li > a:hover { 
-    color: $lisaspink;
-}
 
 #announcement_block {
     padding: 1rem;
