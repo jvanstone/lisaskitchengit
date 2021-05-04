@@ -82,6 +82,7 @@ Main Nav Stylings
             float: left;
             position: relative;
             border: solid 0px #fff;
+            border-bottom: 1px solid #37414e;
         }
         
         a {
@@ -177,9 +178,8 @@ ul.sub-menu > li:first-of-type {
 ul.sub-menu > li:last-of-type {
     border-bottom: 2px solid $lisaspink; 
 }
-ul > li, .widget .children > li, .widget .sub-menu > li {
-    border-bottom: 1px solid #37414e;
-}
+
+
 
 /*****
 
@@ -190,12 +190,12 @@ Style Child pages
 ul.child_page_list {
     margin-bottom: 40px;
     list-style-type: none;
-    border: 1px solid rgb(129, 56, 56);
+    //border: 1px solid rgb(129, 56, 56);
     //background-color: #ccc;
   
     li {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
         line-height: 2;
         font-size: 22px;
         font-weight: bold;
