@@ -283,7 +283,7 @@ function lk_list_child_pages() {
 add_shortcode( 'list_childpages', 'lk_list_child_pages' );
 
 
-function lisaskitchen_add_header(){
+function lkadd_header(){
 
     ?>
     <div id="announcement_block">
@@ -291,4 +291,4 @@ function lisaskitchen_add_header(){
     </div>
     <?php
 }
-add_action( 'announcement-block', 'lisaskitchen_add_header' );
+add_action( 'announcement-block', 'lk_add_header' );
