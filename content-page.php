@@ -2,12 +2,9 @@
 /**
  * Template Name: Page-breadcrumbs
  *
- * @package Story
+ * @package Lisaskitchen
  */
 ?>
-
-
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	

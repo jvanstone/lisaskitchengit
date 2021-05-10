@@ -23,12 +23,12 @@ get_header(); ?>
 	<div class="entry-wrapper">
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php custom_breadcrumbs(); ?>
+			<?php lk_custom_breadcrumbs(); ?>
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php the_content(); ?>
 
-		<?php list_child_pages(); ?>
+		<?php lk_list_child_pages(); ?>
 		</div><!-- .entry-content -->
 		
 		<?php edit_post_link( __( 'Edit', 'story' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>

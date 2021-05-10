@@ -260,7 +260,7 @@ function lk_custom_breadcrumbs() {
 }
 
 //List Child pages
-function lisaskitchen_list_child_pages() { 
+function lk_list_child_pages() { 
  
     global $post; 
      
@@ -280,7 +280,7 @@ function lisaskitchen_list_child_pages() {
     return $string;
      
 }
-add_shortcode( 'list_childpages', 'lisaskitchen_list_child_pages' );
+add_shortcode( 'list_childpages', 'lk_list_child_pages' );
 
 
 function lisaskitchen_add_header(){
