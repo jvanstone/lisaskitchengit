@@ -14,7 +14,7 @@
 	<div class="entry-wrapper">
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php custom_breadcrumbs(); ?>
+			<?php lk_custom_breadcrumbs(); ?>
 		</header><!-- .entry-header -->
 		
 		<div class="entry-content">
