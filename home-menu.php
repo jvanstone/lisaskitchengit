@@ -9,9 +9,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * 
- * 
- *
  */
 
 
@@ -27,8 +24,6 @@ get_header(); ?>
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php the_content(); ?>
-
-		<?php lk_list_child_pages(); ?>
 		</div><!-- .entry-content -->
 		
 		<?php edit_post_link( __( 'Edit', 'story' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
