@@ -283,7 +283,7 @@ function lk_list_child_pages() {
 add_shortcode( 'list_childpages', 'lk_list_child_pages' );
 
 
-function lkadd_header(){
+function lk_add_header(){
 
     ?>
     <div id="announcement_block">
