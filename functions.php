@@ -292,3 +292,16 @@ function lk_add_header(){
     <?php
 }
 add_action( 'announcement-block', 'lk_add_header' );
+
+
+
+/** 
+ *  Remove Google ReCaptcha code/badge everywhere apart from select pages
+ */
+add_action('wp_print_scripts', function () {
+	global $post;
+	if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+		wp_dequeue_script( 'google-recaptcha' );
+		wp_dequeue_script( 'wpcf7-recaptcha' );
+	}
+});
